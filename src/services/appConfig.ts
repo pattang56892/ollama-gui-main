@@ -2,7 +2,7 @@ import { useLocalStorage } from '@vueuse/core'
 import gravatarUrl from 'gravatar-url'
 import { computed } from 'vue'
 
-export const gravatarEmail = useLocalStorage('gravatarEmail', 'pattang56892@patricktanghomepage.net')
+export const gravatarEmail = useLocalStorage('gravatarEmail', 'https://github.com/pattang56892?tab=repositories')
 export const avatarUrl = computed(() => gravatarUrl(gravatarEmail.value, { size: 200 }))
 export const debugMode = useLocalStorage('debug', false)
 export const baseUrl = useLocalStorage('baseUrl', 'http://localhost:11434/api')
